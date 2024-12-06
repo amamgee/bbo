@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Box Office</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600&display=swap');
+        body {
+            font-family: 'League Spartan', Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            margin-top: 20px;
+        }
+        .logo img {
+            width: 150px; /* Adjust size as needed */
+        }
+        h1 {
+            font-size: 2em;
+            color: #000000;
+            margin-top: 20px;
+            padding-top: 10px; /* Adds padding for better spacing on mobile */
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px auto;
+            max-width: 600px;
+        }
+        .button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            color: #000000;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button:hover {
+            color: #ffffff;
+            background-color: #000000;
+        }
+        .event {
+            margin: 20px 10px;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        .event img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin: 10px auto;
+        }
+        .event-details {
+            font-size: 1em;
+            margin-top: 10px;
+            text-align: center;
+            padding: 0 20px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="logo">
+        <img src="BBO.svg" alt="Birthday Box Office Logo">
+    </div>
+
+    <!-- Greeting -->
+    <h1>Buon Compleanno Frederico!</h1>
+    <p>Come nostro regalo, scegli uno spettacolo che ti piace per te e tua moglie.</p>
+    
+    <!-- Event 1: Tosca -->
+    <div class="event">
+        <img src="Tosca.jpg" alt="Tosca - Teatro dell'Opera di Roma">
+        <div class="event-details">
+            <h2>Tosca</h2>
+            <p>Opera: Melodramma in tre atti</p>
+            <p>Musica di: Giacomo Puccini</p>
+            <p>Prima rappresentazione: 14 gennaio 2025 ore 20:00</p>
+            <p>Repliche: 16, 17, 18, 19 gennaio 2025</p>
+            <p>Luogo: Teatro dell'Opera di Roma</p>
+        </div>
+        <a href="mailto:ugurluandrea@gmail.com?subject=Scelta Tosca&body=Ho scelto Tosca come spettacolo per il mio regalo di compleanno." class="button">Scegli Tosca</a>
+    </div>
+    
+    <!-- Event 2: Lucrezia Borgia -->
+    <div class="event">
+        <img src="Lucrecia.jpg" alt="Lucrezia Borgia - Teatro dell'Opera di Roma">
+        <div class="event-details">
+            <h2>Lucrezia Borgia</h2>
+            <p>Opera: Opera seria in un prologo e due atti</p>
+            <p>Musica di: Gaetano Donizetti</p>
+            <p>Prima rappresentazione: Domenica 16 febbraio 2025 ore 19:00</p>
+            <p>Repliche: 18, 19, 22 e 23 febbraio 2025</p>
+            <p>Luogo: Teatro dell'Opera di Roma</p>
+        </div>
+        <a href="mailto:ugurluandrea@gmail.com?subject=Scelta Lucrezia Borgia&body=Ho scelto Lucrezia Borgia come spettacolo per il mio regalo di compleanno." class="button">Scegli Lucrezia</a>
+    </div>
+    
+    <!-- Event 3: Maurizio Battista -->
+    <div class="event">
+        <img src="Maurizio.jpg" alt="Maurizio Battista - Teatro Olimpico">
+        <div class="event-details">
+            <h2>Maurizio Battista - MB Show</h2>
+            <p>Genere: Prosa</p>
+            <p>Descrizione: Anche quest'anno siamo pronti a divertirvi con risate, coreografie, ospiti e ovviamente il nostro Maurizio Battista.</p>
+            <p>Prima rappresentazione: 11 dicembre 2024 ore 21:00</p>
+            <p>Repliche: Fino al 16 febbraio 2025</p>
+            <p>Luogo: Teatro Olimpico</p>
+        </div>
+        <a href="mailto:ugurluandrea@gmail.com?subject=Scelta Maurizio Battista&body=Ho scelto Maurizio Battista - MB Show come spettacolo per il mio regalo di compleanno." class="button">Scegli Maurizio Battista</a>
+    </div>
+    
+    <footer>
+        &copy; 2024 Birthday Box Office
+    </footer>
+</body>
+</html>
