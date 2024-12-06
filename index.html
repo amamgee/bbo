@@ -10,7 +10,7 @@
             font-family: 'League Spartan', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            overflow: hidden; /* Disable scrolling initially */
         }
         #splash {
             position: fixed;
@@ -73,7 +73,7 @@
         h1 {
             font-size: 3em;
             color: #000000;
-            margin-top: 20px;
+            margin-top: 40px;
         }
         p {
             font-size: 1.2em;
@@ -97,6 +97,14 @@
             margin-top: 10px;
             text-align: center;
             padding: 0 20px;
+        }
+        .event-details a {
+            color: #289da0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .event-details a:hover {
+            text-decoration: underline;
         }
         .button {
             display: inline-block;
@@ -148,7 +156,7 @@
                 <p>Musica di: Giacomo Puccini</p>
                 <p>Prima rappresentazione: 14 gennaio 2025 ore 20:00</p>
                 <p>Repliche: 16, 17, 18, 19 gennaio 2025</p>
-                <p>Luogo: Teatro dell'Opera di Roma</p>
+                <p>Luogo: <a href="https://www.google.com/maps?q=Teatro+dell'Opera+di+Roma" target="_blank">Teatro dell'Opera di Roma</a></p>
             </div>
             <a href="mailto:ugurluandrea@gmail.com?subject=Scelta Tosca&body=Ho scelto Tosca come spettacolo per il mio regalo di compleanno." class="button">Scegli Tosca</a>
         </div>
@@ -162,7 +170,7 @@
                 <p>Musica di: Gaetano Donizetti</p>
                 <p>Prima rappresentazione: Domenica 16 febbraio 2025 ore 19:00</p>
                 <p>Repliche: 18, 19, 22 e 23 febbraio 2025</p>
-                <p>Luogo: Teatro dell'Opera di Roma</p>
+                <p>Luogo: <a href="https://www.google.com/maps?q=Teatro+dell'Opera+di+Roma" target="_blank">Teatro dell'Opera di Roma</a></p>
             </div>
             <a href="mailto:ugurluandrea@gmail.com?subject=Scelta Lucrezia Borgia&body=Ho scelto Lucrezia Borgia come spettacolo per il mio regalo di compleanno." class="button">Scegli Lucrezia</a>
         </div>
@@ -176,7 +184,7 @@
                 <p>Descrizione: Anche quest'anno siamo pronti a divertirvi con risate, coreografie, ospiti e ovviamente il nostro Maurizio Battista.</p>
                 <p>Prima rappresentazione: 11 dicembre 2024 ore 21:00</p>
                 <p>Repliche: Fino al 16 febbraio 2025</p>
-                <p>Luogo: Teatro Olimpico</p>
+                <p>Luogo: <a href="https://www.google.com/maps?q=Teatro+Olimpico+Roma" target="_blank">Teatro Olimpico</a></p>
             </div>
             <a href="mailto:ugurluandrea@gmail.com?subject=Scelta Maurizio Battista&body=Ho scelto Maurizio Battista - MB Show come spettacolo per il mio regalo di compleanno." class="button">Scegli Maurizio Battista</a>
         </div>
@@ -232,6 +240,7 @@
             } else {
                 clearInterval(interval);
                 splash.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Enable scrolling
                 main.style.display = 'flex';
                 createConfetti();
             }
