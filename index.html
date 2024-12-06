@@ -194,6 +194,9 @@
         </footer>
     </div>
 
+    <!-- Audio Element for Tanti Auguri Tune -->
+    <audio id="tantiAuguri" src="audio/tanti_auguri.mp3"></audio>
+
     <script>
         // Color palette
         const colors = ['#93c5aa', '#f6c25f', '#f57c80', '#d0d57f', '#289da0'];
@@ -201,6 +204,7 @@
         const splash = document.getElementById('splash');
         const main = document.getElementById('main');
         const confettiContainer = document.getElementById('confetti');
+        const tantiAuguri = document.getElementById('tantiAuguri');
 
         // Create confetti
         let confettiPieces = [];
@@ -243,6 +247,7 @@
                 document.body.style.overflow = 'auto'; // Enable scrolling
                 main.style.display = 'flex';
                 createConfetti();
+                tantiAuguri.play(); // Play Tanti Auguri tune
             }
         }, 1000);
     </script>
